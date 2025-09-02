@@ -20,9 +20,9 @@ def pausa (seg):
 def wifi(modo): 
     if modo=='on':
         os.system('netsh wlan connect md1')
-        pausa(20)
+        pausa(30)
     elif modo=='off':
-        time.sleep(10)
+        time.sleep(30)
         os.system('netsh wlan disconnect')
 
 def wifi2():
@@ -47,7 +47,7 @@ while True:
     
     wifi('off')
 
-    pausa(900)  # pausa 1h=3600seg 10hs=36000seg
+    pausa(3600)  # pausa 1h=3600seg 10hs=36000seg
 
     pyautogui.keyDown('alt') #cerrar ventana
     pyautogui.keyDown('f4')
