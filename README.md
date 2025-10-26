@@ -1,2 +1,3 @@
-md7.py
+md7a.py noticias
+md7b.py indicadores
 
